@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * prints a srting of character
+ * hello_printf - prints a string of charactors
  */
 int main(void)
 {
