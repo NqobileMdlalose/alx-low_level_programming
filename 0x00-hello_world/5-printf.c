@@ -2,6 +2,8 @@
 
 /**
  * main - prints a string of charactors
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
