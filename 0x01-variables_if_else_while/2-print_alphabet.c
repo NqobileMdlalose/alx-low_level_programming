@@ -10,14 +10,13 @@
 int main(void)
 {
 	int x;
-
-	x = 'A';
-	while (x <= 'Z')
-	{
-		x = tolower(x);
-		putchar(x);
-		x++;
+	
+	for (x = 'A'; x <= 'Z'; x++)
+	{	
+		char small = tolower(x);
+		putchar(small);
 	}
-	printf("%c\n", x);
+	printf("\n");
 	return (0);
 }
+
