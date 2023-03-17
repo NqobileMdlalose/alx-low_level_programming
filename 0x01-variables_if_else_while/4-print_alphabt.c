@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * main - Entry Point 
+ * main - Entry Point
  *
  * Description: Prints alphabet in lower case execpt for q and e
  * Return: Always 0 (Success)
@@ -13,7 +13,7 @@ int main(void)
 	char e;
 	char q;
 	char small;
-	
+
 	e = 'e';
 	q = 'q';
 	for (x = 'A'; x <= 'Z'; x++)
