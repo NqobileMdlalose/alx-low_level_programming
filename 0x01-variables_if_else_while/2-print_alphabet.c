@@ -10,12 +10,14 @@
 int main(void)
 {
 	int x;
-	
+
 	for (x = 'A'; x <= 'Z'; x++)
-	{	
-		char small = tolower(x);
+
+	{
+	char small = tolower(x);
 		putchar(small);
 	}
+
 	printf("\n");
 	return (0);
 }
