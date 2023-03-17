@@ -5,7 +5,6 @@
 /**
  * main - Entry Point
  *
- * A
  * Description: Prints out single numbers of base 10
  * Return: Always 0 (Success)
  */
