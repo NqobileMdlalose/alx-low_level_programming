@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - Entry Point 
+ * main - Entry Point
  *
  * Description: Prints the possible combinations of single-digit number
  * Return: Always 0 (Success)
@@ -11,6 +11,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
