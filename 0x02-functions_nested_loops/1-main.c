@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - Entry Point
  *
  * Return: Always 0.
  */
