@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+/**
+ * main - Entry Point
+ *
+ * Description: Prints the possible combinations of single-digit number
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+		if (i < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
+	putchar('\n');
+	return (0);
+}
+
