@@ -5,6 +5,7 @@
  * main - prints the largest of 3 intergers
  * Return: 0
  */
+
 int main(void)
 {
 	int a, b, c;
