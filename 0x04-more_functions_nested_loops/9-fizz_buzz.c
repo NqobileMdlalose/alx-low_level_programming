@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: fizz buzz test
- * Return:
+ * Return: 0
  */
 int main(void)
 {
