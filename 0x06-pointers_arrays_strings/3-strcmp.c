@@ -10,7 +10,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int i, j, pos, neg;
 	int len1 = 0, len2 = 0;
-	
+
 	i = 0;
 	j = 0;
 	pos = 15;
