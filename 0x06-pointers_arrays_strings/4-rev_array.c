@@ -2,19 +2,19 @@
 
 /**
  * reverse_array - reverses the content of an array
- * @n: integer 1
+ * @n: integer
  * @a: pointer
  * Return: void
  */
 void reverse_array(int *a, int n)
 {
 	int i;
-	char tem;
+	char rev;
 
 	for (i = 0; i < n / 2; i++)
 	{
-		tem = a[i];
+		rev = a[i];
 		a[i] = a[n - i - 1];
-		a[n - i - 1] = tem;
+		a[n - i - 1] = rev;
 	}
 }
