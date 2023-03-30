@@ -2,16 +2,21 @@
 
 /**
  * string_toupper - changes lower case to upper case
- * @* - charactor pointer
+ * @a: charactor pointer
  * Return: char
  */
-char *string_toupper(char *)
+char *string_toupper(char *a)
 {
-	char i = 'a';
+	int i = 0, j = 0;
 
-	if (i >= 'a' && i <= 'z')
+	while (a[j] != '\0' && a[i] != '\0')
 	{
-		*i = *i - 32;
+		if (a[j] >= 97 && a[j] <= 122)
+		{
+			a[i] = a[j] - 32;
+		}
+		j++;
+		i++;
 	}
-	return (i);
+	return (a);
 }
