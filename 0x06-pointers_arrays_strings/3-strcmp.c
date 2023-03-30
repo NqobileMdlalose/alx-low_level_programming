@@ -8,10 +8,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, neg;
+	int i = 0, j = 0, neg;
 
-	i = 0;
-	j = 0;
 	neg = s1[i] - s2[j];
 	if (s1[i] > s2[j])
 	{
