@@ -11,17 +11,18 @@ int _strcmp(char *s1, char *s2)
 	int i = 0, j = 0, neg;
 
 	neg = s1[i] - s2[j];
-	if (s1[i] > s2[j])
+	while (s1[i] != '\0' && s2[j] != '\0')
 	{
-		return (neg);
+		if (s1[i] > s2[j])
+		{
+			return (neg);
+		}
+		else if (s1[i] < s2[j])
+		{
+			return (neg);
+		}
+		i++;
+		j++;
 	}
-	else if (s1[i] < s2[j])
-	{
-
-		return (neg);
-	}
-	else
-	{
 	return (0);
-	}
 }
