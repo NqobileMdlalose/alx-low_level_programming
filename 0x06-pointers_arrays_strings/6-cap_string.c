@@ -2,27 +2,25 @@
 
 /**
  */
-char *cap_string(char *t)
+char *cap_string(char *s)
 {
-	int i = 0;
-	int cap = 1;
+	int i, j;
+	char k[13] =  {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	while (t[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (cap &&(t[i] >= 'a' && t[i] <= 'z'))
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] =s[i] - 32;
+		for (j = 0; j < 13; j++)
 		{
-			t[i] -= 'a' - 'A';	
+			if (s[i] == k[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] =s[i + 1] - 32;
+				}
+			}
 		}
-		if (t[i] == ' ' || t[i] == '\t' || t[i] == '\n')
-		{
-			cap = 1;
-		}
-		else 
-		{
-			cap = 0;
-		}
-		i++;
 	}
-	return (t);
-}
-  
+	return (s);
+} 
