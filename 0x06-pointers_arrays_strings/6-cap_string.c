@@ -4,18 +4,22 @@
  */
 char *cap_string(char *t)
 {
-	int i = 0, j;
+	int i = 0;
+	int cap = 1;
 
 	while (t[i] != '\0')
 	{
-		j = i + 1;
-		if (j == ' ' && j == '.')
+		if (cap &&(t[i] >= 'a' && t[i] <= 'z'))
 		{
-			while (t[i] >= 97 && t[i] <= 122)
-			{
-				t[i] = t[i] - 32;
-				i++;
-			}
+			t[i] -= 'a' - 'A';	
+		}
+		if (t[i] == ' ' || t[i] == '\t' || t[i] == '\n')
+		{
+			cap = 1;
+		}
+		else 
+		{
+			cap = 0;
 		}
 		i++;
 	}
