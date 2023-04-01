@@ -11,7 +11,7 @@ char *rot13(char *a)
 	char *alpha1 = "abcdefghijklm";
 	char *alpha2 = "nopqrstuvwxyz";
 	int i;
-	
+
 	while (alpha1[i] != '\0')
 	{
 		while (a[i] <= 13)
