@@ -1,5 +1,5 @@
 #include "main.h"
- 
+
 /**
  * _strspn - gets the length of a prefix substing
  * @s: string 1
@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (s[i] != accept[i])
 		{
 			break;
-		}		
+		}
 		i++;
 	}
 	count++;
