@@ -2,7 +2,7 @@
 
 /**
  * _memcpy - copies a memory area
- * @dest: destination 
+ * @dest: destination
  * @src: source
  * @n: number of bytes
  * Return: dest
@@ -10,11 +10,12 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *p = dest;
+	unsigned int i = 0;
 
-	while (n--)
+	while (i != n)
 	{
 		*p++ = *src++;
+		i++;
 	}
-	*p = '\0';
 	return (dest);
 }
