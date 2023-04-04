@@ -9,7 +9,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *p1, *p2, *p3;
-	
+
 	p1 = haystack;
 
 	if (!haystack || !needle)
@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		p2 = p1;
 		p3 = needle;
-		while(*p2 && *p3 && *p2 == *p3)
+		while (*p2 && *p3 && *p2 == *p3)
 		{
 			p2++;
 			p3++;
