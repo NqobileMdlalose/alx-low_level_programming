@@ -3,7 +3,8 @@
 /**
  * sqrt_func - recursion function
  * @n: integer
- * @i: integer
+ * @bot: integer
+ * @top: integer
  * Return: int
  */
 int sqrt_func(int n, int bot, int top)
@@ -17,7 +18,7 @@ int sqrt_func(int n, int bot, int top)
 		return (mid);
 	}
 	if (mid * mid < n)
-	{	
+	{
 		return (sqrt_func(n, mid, top));
 	}
 	return (sqrt_func(n, bot, mid));
