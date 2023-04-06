@@ -10,7 +10,7 @@ int  prime_recursive(int n, int i)
 {
 	if (i <= 2)
 	{
-		return(0);
+		return (0);
 	}
 	if (n % i == 0)
 	{
