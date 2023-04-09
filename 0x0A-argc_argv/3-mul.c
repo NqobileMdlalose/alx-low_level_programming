@@ -11,12 +11,9 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 1;
-	int mul;
+	int i = 1, mul = i;
 
-	mul = i;
-
-	if (argc > 1)
+	if (argc > 1 && argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -24,7 +21,7 @@ int main(int argc, char **argv)
 		}
 		printf("%d\n", mul);
 	}
-	if (argc == 1 && argc == 2)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
