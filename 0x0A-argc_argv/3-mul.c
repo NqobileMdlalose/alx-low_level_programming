@@ -12,12 +12,12 @@
 int main(int argc, char **argv)
 {
 	int i = 1; 
-	unsigned int mul = 0;
+	int mul = i;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mul = i * atoi(argv[i]);
+			mul *= atoi(argv[i]);
 		}
 		printf ("%d\n", mul);
 	}
