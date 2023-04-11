@@ -18,15 +18,14 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	arr = malloc(sizeof(*arr) * size);
-	for (i = 0; i < size; i++)
-	{
-		arr[i] = c;
-	}
-
-	/*if memory allocation fails*/
+	/*if memory fails*/
 	if (arr == NULL)
 	{
 		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		arr[i] = c;
 	}
 	return (arr);
 }
