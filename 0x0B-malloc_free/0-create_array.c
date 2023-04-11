@@ -11,9 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char *arr;
-
-	arr = (char *)malloc(sizeof(char) * size);
+	char *arr = (char *)malloc(sizeof(char) * size);
 
 	if (size == 0)
 	{
@@ -27,7 +25,7 @@ char *create_array(unsigned int size, char c)
 	/*if memory allocation fails*/
 	if (*arr == '\0')
 	{
-		return ('\0');
+		return (arr);
 	}
 	return (arr);
 }
