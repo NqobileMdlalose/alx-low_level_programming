@@ -24,9 +24,9 @@ char *create_array(unsigned int size, char c)
 	}
 
 	/*if memory allocation fails*/
-	if (*arr == '\0')
+	if (arr == '\0')
 	{
-		return (arr);
+		return ('\0');
 	}
 	return (arr);
 }
