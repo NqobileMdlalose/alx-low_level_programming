@@ -2,7 +2,10 @@
 #include "main.h"
 
 /**
- *
+ * free_grid - frees the program grid
+ * @grid: pointer
+ * @height: integer
+ * Return: void
  */
 void free_grid(int **grid, int height)
 {
