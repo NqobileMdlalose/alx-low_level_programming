@@ -10,21 +10,19 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog
-	{
-		char name[20];
-		float age;
-		char owner[20];
-	};
 	int i;
 
-	for (i = 0; name[i] != '\0'; i++)
+	i = 0; 
+	while (name[i] != '\0')
 	{
-		d->name = name;
+		i++;
 	}
+	d->name = name;
 	d->age = age;
-	for (i = 0; owner[i] != '\0'; i++)
+	i = 0;
+	while (owner[i] != '\0')
 	{
-		d->owner = owner;
+		i++;
 	}
+	d->owner = owner;
 }
