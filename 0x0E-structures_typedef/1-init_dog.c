@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * init_dog - initializes a var type
@@ -11,15 +11,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	int j;
-
-	for (j = 0; name[j] < '\0'; j++)
-	{
-		d->name = name;
-	}
+	strcpy(d->name, name);
 	d->age = age;
-	for (j = 0; owner[j] < '\0'; j++)
-	{
-		d->owner = owner;
-	}
+	strcpy(d->owner, owner);
 }
