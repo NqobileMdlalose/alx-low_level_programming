@@ -6,7 +6,7 @@
  * @str: arg 1
  * Return: char
  */
-char* str_dup(char *str)
+char *str_dup(char *str)
 {
 	int len = 0, i;
 	char *newstr;
@@ -16,7 +16,7 @@ char* str_dup(char *str)
 		len++;
 	}
 	newstr = malloc((len + 1) * sizeof(char));
-	for (i = 0; i <- len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		newstr[i] = str[i];
 	}
