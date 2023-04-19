@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	{
 		printf("%02hhx", *((char *)main + j));
 		j++;
-		if (n - 1 > j)
+		if (n  > j)
 		{
 			printf(" ");
 		}
