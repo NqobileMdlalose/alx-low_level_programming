@@ -29,9 +29,8 @@ int main(int argc, char **argv)
 		{
 			printf(" ");
 		}
-		else
-			printf("\n");
 	}
+	printf("\n");
 	return (0);
 
 
