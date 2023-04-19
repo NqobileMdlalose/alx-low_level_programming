@@ -24,8 +24,8 @@ int main(int argc, char **argv)
 	}
 	for (j = 0; j < i; j++)
 	{
-		printf("%02hhx ", *((char *)main + j));
-		if (i < j)
+		printf("%02hhx ", *((unsigned char *)main + j));
+		if (i > j)
 		{
 			printf(" ");
 		}
