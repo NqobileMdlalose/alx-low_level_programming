@@ -2,6 +2,9 @@
 #include <stdio.h>
 
 /**
+ * print_list - prints the elements in list_t
+ * @h: head
+ * Return: elements
  */
 size_t print_list(const list_t *h)
 {
@@ -9,7 +12,7 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		if(h->str == NULL)
+		if (h->str == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
