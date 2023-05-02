@@ -1,6 +1,9 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
+ * free_listint2 - frees the list and sets the head node to NULL
+ * @head: head pointer
+ * Return: void
  */
 void free_listint2(listint_t **head)
 {
