@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-#define FILE_PERMISSIONS 0600
+#define FILE_PERMISSIONS (S_IRUSR | S_IWUSR)
 /**
  * create_file - Creates a file with the given filename and writes the given
  * text content to it. If the file already exists, it will be truncated.
