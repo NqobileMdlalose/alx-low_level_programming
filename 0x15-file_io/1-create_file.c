@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+#define FILE_PERMISSIONS 0600
 /**
  * create_file - Creates a file with the given filename and writes the given
  * text content to it. If the file already exists, it will be truncated.
@@ -16,11 +17,10 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file, bw = 0, len = 0;
-	mode_t mode = S_IRUSR | S_IWUSR;
 
 	if (filename == NULL)
 		return (-1);
-	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, mode);
+	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, FILE_PERMISSIONS);
 	if (file == -1)
 		return (-1);
 	while (text_content[len] != '\0')
