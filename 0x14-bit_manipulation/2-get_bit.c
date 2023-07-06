@@ -9,7 +9,8 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int bits = 0;
-	unsigned long int temp = n, mask = 1UL << index;
+	unsigned long int temp = n;
+	unsigned int mask = 1UL << index;
 
 	while (temp != 0)
 	{
