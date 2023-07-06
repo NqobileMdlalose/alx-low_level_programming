@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stddef.h>
-
+/**
+ * binary_to_uint - converts binary to decimal
+ * @b: string containing 1s and 0s
+ * Return: unsigned in
+ */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0;
