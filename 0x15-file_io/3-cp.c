@@ -6,14 +6,13 @@
 
 #define BUFFER_SIZE 1024
 /**
- * print_error_and_exit - prints error
+ * print_error - prints error
  * @error_message: error message
  * Return: void
  */
-void print_error_and_exit(const char *error_message)
+void print_error(const char *error_message)
 {
-	dprintf (STDERR_FILENO, "%s\n", error_message);
-	exit(EXIT_FAILURE);
+	dprintf(STDERR_FILENO, "Error: %s\n", error_message);
 }
 /**
  * main - entry point
@@ -31,14 +30,14 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		print_error_and_exit("Usage: cp file_from file_to");
+		print_error("Usage: cp file_from file_to");
 		exit(97);
 	}
 	file_from = argv[1];
 	file_to = argv[2];
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
-	{
+	{		
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
@@ -64,11 +63,6 @@ int main(int argc, char **argv)
 	if (close(fd_from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
-		exit(100);
-	}
-	if (close(fd_to) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
 	return (0);
