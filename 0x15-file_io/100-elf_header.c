@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-        	print_error("Error opening file");
+		print_error("Error opening file");
 	}
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
 	{
@@ -125,6 +125,6 @@ int main(int argc, char *argv[])
 	}
 	print_elf_header(&header);
 	close(fd);
-	return 0;
+	return (0);
 }
 
